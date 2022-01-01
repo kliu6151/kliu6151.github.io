@@ -1,0 +1,41 @@
+.test{
+    scroll-behavior: smooth;
+}
+
+
+.introduction
+{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 15%;
+}
+.aboutSection
+{
+    margin-left: 15%;
+    margin-bottom: 15%;
+
+}
+.aboutSection header
+{
+    font-size: larger;
+    /* text-align: center; */
+}
+
+.portfolioSection
+{
+    text-align: left;
+    padding: 0 15%;
+    margin-bottom: 15%;
+}
+
+.portfolioSection header
+{
+    font-size: larger;
+}
+
+.contactMeSection
+{
+    text-align: left;
+    padding: 0 15%;
+}

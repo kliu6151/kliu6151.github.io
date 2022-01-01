@@ -1,17 +1,18 @@
-import classes from "./MainNavigation";
+import classes from "./MainNavigation.module.css";
 
 import {Link} from 'react-router-dom'
+import {HashLink} from 'react-router-hash-link';
 
 function MainNavigation() {
   return(
-  <header>
-    <div>Home Page</div>
+  <header className={classes.header}>
+    <div className={classes.title}>Home Page</div>
     <ul>
       <li>
-        <Link to="/">About</Link>
+        <HashLink smooth to='/About/#about'>About</HashLink>
       </li>
       <li>
-        <Link to="/Portfolio">Portfolio</Link>
+        <HashLink smooth to="/Portfolio/#portfolio">Portfolio</HashLink>
       </li>
       <li>
         <Link to="/Contact">Contact me</Link>

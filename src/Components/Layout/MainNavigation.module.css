@@ -1,0 +1,34 @@
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 26, 26);
+  }
+.title {
+    color:green;
+    left:50%;
+    position: absolute;
+}
+
+  /* .header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+  } */
+
+.header ul{
+    position: relative;
+    align-items: baseline;
+    display: flex;
+    list-style:none;
+    left: 65%;
+    color:yellow;
+}
+
+.header li {
+    margin-left: 3rem;
+    font-size: larger;
+}

@@ -14,6 +14,7 @@
     /* outline-color: red; */
   }
 
+
 .drop
 {
   position:absolute;
@@ -26,7 +27,8 @@
 
 .drop ul
 {
-    left:0%;
+    /* left:0%; */
+    list-style: none;
 }
 
 .drop a

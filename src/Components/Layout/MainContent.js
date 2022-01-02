@@ -1,8 +1,10 @@
 import Classes from "./MainContent.module.css";
 
+import Close from "../dropdown"
+
 
 function MainContent() {
-        return (
+    return (
         <div className={Classes.overall}>
             <section className={Classes.introduction}>
                 <header>Welcome!</header>

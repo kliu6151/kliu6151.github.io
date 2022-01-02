@@ -1,41 +1,49 @@
 import Classes from "./dropdown.module.css";
 import {HashLink} from "react-router-hash-link";
 import {useState} from "react";
+import onClickOutside from 'react-onclickoutside';
 
 function DropDown() {
     const [DropDownIsOpen, setDropDownIsOpen] = useState(false);
+    DropDown.handleClickOutside = () => setDropDownIsOpen(false);
     function open() {
         setDropDownIsOpen(true);
     }
-    function close() {
+    function Close() {
         setDropDownIsOpen(false);
     }
 
-    // const toggling = () => setDropDownIsOpen(!DropDownIsOpen);
 
     return (
         <div>
             <div className={Classes.container}>
-                <button type="button" onClick={open}>
+                <button type="button" onClick={open} >
                 ☰
                 </button>
-                {DropDownIsOpen && (<div className={Classes.drop}>
+                {DropDownIsOpen ? (<div className={Classes.drop}>
                     <ul>
                         <li>
-                            <HashLink smooth to="#about">About</HashLink>
+                            <HashLink smooth to="#about" onClick={Close}>About</HashLink>
                         </li>
                         <li>
-                            <HashLink smooth to="#portfolio">Portfolio</HashLink>
+                            <HashLink smooth to="#portfolio" onClick={Close}>Portfolio</HashLink>
                         </li>
                         <li>
-                            <HashLink smooth to="#contact">Contact me</HashLink>
+                            <HashLink smooth to="#contact" onClick={Close}>Contact me</HashLink>
                         </li>
+                        <button type="button" className={Classes.cancelButton} onClick={Close}>
+                            X
+                        </button>
                     </ul>
+                
                 </div>
-                )} 
+                ) : null} 
             </div>
         </div>
     );
 }
 
-export default DropDown;
+const clickOutsideConfig = {
+    handleClickOutside: () => DropDown.handleClickOutside,
+};
+export default onClickOutside(DropDown,clickOutsideConfig);

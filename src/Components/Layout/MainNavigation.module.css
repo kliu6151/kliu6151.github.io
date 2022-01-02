@@ -5,6 +5,7 @@
     background-color: rgb(34, 26, 26);
   }
 
+
 .dropped{
     width: 100%;
 }
@@ -21,24 +22,22 @@
     /* height: 0%; */
 }
 .test{
-    position: relative;
+    position: sticky;
     align-items: baseline;
     display: flex;
     list-style:none;
-    left: 65vw;
-    margin:0;
-    padding:0;
-    
+    /* float:inline-start; */
+    float:right;
+    /* bottom:1.5vw;  */
+    /* padding:0; */
 }
-@media screen and (max-width: 1026px) {
-    #fadeshow1 {
-        display:none;
-    }
-}
+@media (max-width: 960px) {
+    .test { display: none; }
+  }
 
 .header li {
     margin-left: 3rem;
-    font-size: larger;
+    font-size: large;
 }
 
 .header a:hover,

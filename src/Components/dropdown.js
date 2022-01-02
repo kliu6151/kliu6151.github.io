@@ -6,6 +6,8 @@ import onClickOutside from 'react-onclickoutside';
 function DropDown() {
     const [DropDownIsOpen, setDropDownIsOpen] = useState(false);
     DropDown.handleClickOutside = () => setDropDownIsOpen(false);
+
+
     function open() {
         setDropDownIsOpen(true);
     }
@@ -20,7 +22,8 @@ function DropDown() {
                 <button type="button" onClick={open} >
                 ☰
                 </button>
-                {DropDownIsOpen ? (<div className={Classes.drop}>
+                {DropDownIsOpen ? (
+                <div className={Classes.drop}>
                     <ul>
                         <li>
                             <HashLink smooth to="#about" onClick={Close}>About</HashLink>
@@ -31,11 +34,10 @@ function DropDown() {
                         <li>
                             <HashLink smooth to="#contact" onClick={Close}>Contact me</HashLink>
                         </li>
-                        <button type="button" className={Classes.cancelButton} onClick={Close}>
-                            X
-                        </button>
                     </ul>
-                
+                    <button type="button" className={Classes.cancelButton} onClick={Close}>
+                        X
+                    </button>
                 </div>
                 ) : null} 
             </div>

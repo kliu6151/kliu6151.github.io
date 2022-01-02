@@ -1,6 +1,5 @@
 import Classes from "./MainContent.module.css";
 
-import Close from "../dropdown"
 
 
 function MainContent() {

@@ -1,3 +1,16 @@
+html,body, #root {
+    height: 100%;
+    headerStyle: {
+        elevation: 0, // remove shadow on Android
+        shadowOpacity: 0, // remove shadow on iOS
+        borderBottomWidth: 0 // Just in case.
+    }
+  }
+
 body{
-    background-color: rgba(0, 0, 65, 0.856);
+    margin: 0;
+    /* background-image: linear-gradient(315deg, #122030 0%, #384a5e 74%); */
+
 }
+
+

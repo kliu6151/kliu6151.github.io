@@ -5,16 +5,10 @@
     padding: 0;
     width: 25px;
     float:right;
-    /* display:none; */
     cursor: pointer;
-    /* right: 100%; */
-    /* border: 0; */
-    /* background-color: #fff; */
-    /* color: #333; */
-    /* outline-color: red; */
 }
 
-@media (min-width: 960px) {
+@media (min-width: 990px) {
     ul  { display: none; }
   }
 
@@ -43,11 +37,10 @@
     /* margin-left: 5vh; */
 }
 
+.drop li{
+    font-size: normal;
+}
 
-/* .drop li
-{
-    padding: 8px 12px;
-} */
 
 .drop li:hover {
     background-color: rgba(0, 0, 0, 0.14);

@@ -4,7 +4,8 @@
 
 .overall{
     scroll-behavior: smooth;
-    /* background-color: rgba(0, 0, 65, 0.856); */
+    background-image: linear-gradient(315deg, #384a5e 0%, #122030 74%);
+    height: 100%;
 }
 
 
@@ -24,7 +25,6 @@
 .aboutSection header
 {
     font-size: larger;
-    /* text-align: center; */
 }
 
 .portfolioSection

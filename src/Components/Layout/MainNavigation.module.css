@@ -2,15 +2,15 @@
     width: 100%;
     height: 5rem;
     align-items: center;
-    background-color: rgb(34, 26, 26);
-  }
-
-
-.dropped{
-    width: 100%;
+    background-image: linear-gradient(315deg, #020b14 0%, #2f3946 74%);
 }
+
+/* .dropped{
+    width: 100%;
+} */
+
 .dropped div {
-    color:green;
+    color:rgb(62, 84, 129);
     text-align: center;
     font-size: 2rem;
 }
@@ -19,8 +19,8 @@
 {
     width:100%;
     float:right;
-    /* height: 0%; */
 }
+
 .test{
     position: sticky;
     align-items: baseline;
@@ -31,7 +31,7 @@
     /* bottom:1.5vw;  */
     /* padding:0; */
 }
-@media (max-width: 960px) {
+@media (max-width: 990px) {
     .test { display: none; }
   }
 

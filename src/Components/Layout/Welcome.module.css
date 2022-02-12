@@ -1,0 +1,26 @@
+.introduction {
+  /* text-align: center; */
+  height: 100vh;
+  color: #a89988;
+  background-image: linear-gradient(0deg, #020b14 0%, #384a5e 100%);
+}
+.introduction header
+{
+    /* text-align: center; */
+    font-size:50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    transform: translate(-50%,-25%);
+    left:50%;
+
+}
+
+.introduction Paragraph
+{
+    left:50%;
+    top:50%;
+    position: absolute;
+    transform:translate(-50%, 0%);
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

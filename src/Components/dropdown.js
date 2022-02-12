@@ -13,7 +13,6 @@ function DropDown() {
   function Close() {
     setDropDownIsOpen(false);
   }
-  let menu = "";
   if (setDropDownIsOpen) {
   }
 

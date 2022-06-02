@@ -1,3 +1,5 @@
+import React from "react";
+import axios from "axios"
 
 
 function ContactMeForm() {
@@ -8,17 +10,20 @@ function ContactMeForm() {
 
     return (
         <form onSubmit={submitHandler}>
+            <label htmlFor='Name'>Name</label>
             <div>
-                <label htmlFor='Name'>Name</label>
+                
                 <input type='text' required id='Name' />
             </div>
+            <label htmlFor='Email'>Email</label>
             <div>
-                <label htmlFor='Email'>Email</label>
+                
                 <input type='text' required id='Email' />
             </div>
+            <label htmlFor='Message'>Message</label>
             <div>
-                <label htmlFor='Message'>Message</label>
-                <input type='text' required id='Message' />
+                
+                <textarea type='text' required id='Message' rows={5} ></textarea>
             </div>
             <div>
                 <button>Send Message</button>

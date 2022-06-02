@@ -1,0 +1,25 @@
+.contactMeSection
+{
+    padding: 0 15%;
+    color:#c7b5a1;
+    background-image: linear-gradient(180deg, #020b14 0%, #384a5e 100%);
+    height:50vh;
+    
+}
+
+
+
+#contactTitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+textarea { 
+    resize: none;
+    width:30%;
+}
+
+input {
+    width: 30%;
+}
+

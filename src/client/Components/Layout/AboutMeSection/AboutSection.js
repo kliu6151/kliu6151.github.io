@@ -1,5 +1,6 @@
 import Classes from "./AboutSection.module.css";
 import pfp from "./linkedinpfp.jpg";
+import React from "react";
 
 function AboutMe() {
   return (

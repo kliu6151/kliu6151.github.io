@@ -1,13 +1,8 @@
-// import { Routes, Route } from "react-router-dom";
+import React from "react";
 
-// import About from "./Pages/About";
-// import Portfolio from "./Pages/Portfolio";
-// import Contact from "./Pages/Contact";
-import MainNavigation from "./Components/Layout/MainNavigation";
+
+import MainNavigation from "./Components/Layout/sideBar/MainNavigation";
 import MainContent from "./Components/Layout/MainContent";
-import DropDown from "./Components/dropdown";
-import ContactMeForm from "./Components/ContactMeForm";
-// import dropDown from "./Components/dropdown";
 
 function App() {
   return (

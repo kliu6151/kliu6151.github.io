@@ -1,7 +1,8 @@
 import classes from "./MainNavigation.module.css";
+import React from "react";
 
 import {HashLink} from 'react-router-hash-link';
-import DropDown from "../dropdown";
+import DropDown from "../../dropdown";
 import {useState} from "react";
 import {useEffect} from "react";
 

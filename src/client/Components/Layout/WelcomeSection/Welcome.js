@@ -1,4 +1,5 @@
 import Classes from './Welcome.module.css';
+import React from "react";
 
 function Welcome() {
   return (

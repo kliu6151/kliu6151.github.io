@@ -9,13 +9,13 @@ function ContactMeForm() {
     }
 
     return (
-        <form onSubmit={submitHandler}>
+        <form type="POST" onSubmit={submitHandler}>
             <label htmlFor='Name'>Name</label>
             <div>
                 
-                <input type='text' required id='Name' />
+                <input type='text' required id='Name' placeholder="Input your name"/>
             </div>
-            <label htmlFor='Email'>Email</label>
+            <label htmlFor='Email' placeholder="Input your email">Email</label>
             <div>
                 
                 <input type='text' required id='Email' />
@@ -23,7 +23,7 @@ function ContactMeForm() {
             <label htmlFor='Message'>Message</label>
             <div>
                 
-                <textarea type='text' required id='Message' rows={5} ></textarea>
+                <textarea type='text' required id='Message' rows={5} placeholder="message"></textarea>
             </div>
             <div>
                 <button>Send Message</button>

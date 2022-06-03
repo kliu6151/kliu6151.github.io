@@ -12,19 +12,20 @@ function ContactMeForm() {
         <form type="POST" onSubmit={submitHandler}>
             <label htmlFor='Name'>Name</label>
             <div>
-                
                 <input type='text' required id='Name' placeholder="Input your name"/>
             </div>
-            <label htmlFor='Email' placeholder="Input your email">Email</label>
+
+            <label htmlFor='Email' >Email</label>
             <div>
-                
-                <input type='text' required id='Email' />
+                <input type='text' required id='Email' placeholder="Input your email" />
             </div>
+
             <label htmlFor='Message'>Message</label>
             <div>
                 
                 <textarea type='text' required id='Message' rows={5} placeholder="message"></textarea>
             </div>
+            
             <div>
                 <button>Send Message</button>
             </div>

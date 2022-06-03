@@ -7,8 +7,9 @@
     
 }
 
-
-
+.specForm {
+    display:none;
+}
 #contactTitle {
     text-align: center;
     font-size: 50px;

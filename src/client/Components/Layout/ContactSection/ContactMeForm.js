@@ -1,15 +1,14 @@
-import React from "react";
-import axios from "axios"
+import React, {useState} from "react";
+import Classes from "./ContactMeSection.module.css";
 
 
 function ContactMeForm() {
-    // function submitHandler(event)
-    // {
-    //     event.preventDefault();
-    // }
+    const[hideForm, setHideForm] = useState(hideForm);
 
+    
+    const hidingForm = () => setHideForm(true);
     return (
-        <form type="POST" action='/test'>
+        <form type="POST" onSubmit = {hidingForm} className={Classes.specForm ? hideForm : null}>
             <label htmlFor='Name' >Name</label>
             <div>
                 <input type='text' required id='Name' placeholder="Input your name"/>

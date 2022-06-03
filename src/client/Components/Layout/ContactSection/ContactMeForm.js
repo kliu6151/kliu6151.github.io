@@ -3,14 +3,14 @@ import axios from "axios"
 
 
 function ContactMeForm() {
-    function submitHandler(event)
-    {
-        event.preventDefault();
-    }
+    // function submitHandler(event)
+    // {
+    //     event.preventDefault();
+    // }
 
     return (
-        <form type="POST" onSubmit={submitHandler}>
-            <label htmlFor='Name'>Name</label>
+        <form type="POST" action='/test'>
+            <label htmlFor='Name' >Name</label>
             <div>
                 <input type='text' required id='Name' placeholder="Input your name"/>
             </div>
@@ -25,7 +25,7 @@ function ContactMeForm() {
                 
                 <textarea type='text' required id='Message' rows={5} placeholder="message"></textarea>
             </div>
-            
+
             <div>
                 <button>Send Message</button>
             </div>

@@ -4,6 +4,7 @@
     color:#c7b5a1;
     background-image: linear-gradient(180deg, #020b14 0%, #384a5e 100%);
     height:50vh;
+    text-align: center;
     
 }
 
@@ -22,5 +23,9 @@ textarea {
 
 input {
     width: 30%;
+}
+
+.msgSuc {
+    text-align: center;
 }
 

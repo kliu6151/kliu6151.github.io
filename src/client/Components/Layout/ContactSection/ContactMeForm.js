@@ -1,34 +1,81 @@
+import axios from "axios";
 import React, {useState} from "react";
 import Classes from "./ContactMeSection.module.css";
 
 
 function ContactMeForm() {
-    const[hideForm, setHideForm] = useState(hideForm);
 
+    const formId = 'us2LOldY';
+    const formSparkUrl = `https://submit-form.com/${formId}`;
+
+    const initialState = {
+        email: '',
+        name: '',
+        message: ''
+    }
+
+    const initialM = {
+        msg: ''
+    }
+
+    const[formState, setFormState] = useState(initialState);
+    const [message, setMessage] = useState(initialM);
     
-    const hidingForm = () => setHideForm(true);
+
+    const submission = async (event) => {
+        event.preventDefault();
+        await postSubmission();
+    }
+
+    const postSubmission = async() => {
+        const payload = {
+            ...formState,
+        };
+
+        try {
+            await axios.post(formSparkUrl, payload);
+            setMessage({
+                msg: "Thank you! I will be in touch with you shortly"
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const updateForm = (e) => {
+        const { id, value } = e.target;
+        const updatedFormState = { ...formState };
+        updatedFormState[id] = value;
+        setFormState(updatedFormState);
+    }
+
     return (
-        <form type="POST" onSubmit = {hidingForm} className={Classes.specForm ? hideForm : null}>
-            <label htmlFor='Name' >Name</label>
-            <div>
-                <input type='text' required id='Name' placeholder="Input your name"/>
-            </div>
+        <div>
+            <h2 className = {Classes.msgSuc}>
+                {message.msg}
+            </h2>
+            <form type="POST" onSubmit = {submission} >
+                <label htmlFor='Name' >Name</label>
+                <div>
+                    <input type='text' required id='name' placeholder="Input your name" value={formState.name} onChange={updateForm}/>
+                </div>
 
-            <label htmlFor='Email' >Email</label>
-            <div>
-                <input type='text' required id='Email' placeholder="Input your email" />
-            </div>
+                <label htmlFor='Email' >Email</label>
+                <div>
+                    <input type='text' required id='email' placeholder="Input your email" value={formState.email} onChange={updateForm} />
+                </div>
 
-            <label htmlFor='Message'>Message</label>
-            <div>
-                
-                <textarea type='text' required id='Message' rows={5} placeholder="message"></textarea>
-            </div>
+                <label htmlFor='Message'>Message</label>
+                <div>
+                    
+                    <textarea type='text' required id='message' rows={5} placeholder="message" value={formState.message} onChange={updateForm}></textarea>
+                </div>
 
-            <div>
-                <button>Send Message</button>
-            </div>
-        </form>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
     );
 }
 

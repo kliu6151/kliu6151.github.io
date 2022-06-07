@@ -1,14 +1,15 @@
 {
-  "main.css": "/static/css/main.1c95bdb4.chunk.css",
-  "main.js": "/static/js/main.7f794db9.chunk.js",
-  "main.js.map": "/static/js/main.7f794db9.chunk.js.map",
-  "static/js/1.dc6c1a5b.chunk.js": "/static/js/1.dc6c1a5b.chunk.js",
-  "static/js/1.dc6c1a5b.chunk.js.map": "/static/js/1.dc6c1a5b.chunk.js.map",
+  "main.css": "/static/css/main.104b42f5.chunk.css",
+  "main.js": "/static/js/main.76e50640.chunk.js",
+  "main.js.map": "/static/js/main.76e50640.chunk.js.map",
+  "static/js/1.6f0672ca.chunk.js": "/static/js/1.6f0672ca.chunk.js",
+  "static/js/1.6f0672ca.chunk.js.map": "/static/js/1.6f0672ca.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/linkedinpfp.jpg": "/static/media/linkedinpfp.784df388.jpg",
-  "static/css/main.1c95bdb4.chunk.css.map": "/static/css/main.1c95bdb4.chunk.css.map",
+  "static/media/Capture.PNG": "/static/media/Capture.bf852c76.PNG",
+  "static/css/main.104b42f5.chunk.css.map": "/static/css/main.104b42f5.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.3b5efb92d5c3691c4cc27f03921b2610.js": "/precache-manifest.3b5efb92d5c3691c4cc27f03921b2610.js",
+  "precache-manifest.06f22fe4f016186a1a22aa806bfb75e6.js": "/precache-manifest.06f22fe4f016186a1a22aa806bfb75e6.js",
   "service-worker.js": "/service-worker.js"
 }
